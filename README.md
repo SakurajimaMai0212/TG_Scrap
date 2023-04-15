@@ -36,26 +36,8 @@
                         pass
                         print('""')
                     else:
-                        if cl2 == 1:
-                            client2.send_file(row[0], 'photo.png', caption=message) #Вместо photo.png вставь название своей картинки
-                            print(row[0])
-
-                            cl2 = 0
-                            cl3 = 1
-                            cl4 = 0
-
-                        elif cl3 == 1:
-                            client2.send_file(row[0], 'photo.png', caption=message) #Вместо photo.png вставь название своей картинки
-                            print(row[0])
-
-                            cl2 = 0
-                            cl3 = 0
-                            cl4 = 1
-
-                        elif cl4 == 1:
-                            cl2 = 1
-                            cl3 = 0
-                            cl4 = 0
+                        client2.send_file(row[0], 'photo.png', caption=message) #Вместо photo.png вставь название своей картинки
+                        print(row[0])
 
                     time.sleep(2)
                     count += 1
