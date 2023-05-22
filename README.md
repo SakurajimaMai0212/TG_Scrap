@@ -32,7 +32,7 @@
                         pass
                         print('""')
                     else:
-                        client2.send_file(row[0], 'photo.png', caption=message) #Вместо photo.png вставь название своей картинки
+                        client1.send_file(row[0], 'photo.png', caption=message) #Вместо photo.png вставь название своей картинки
                         print(row[0])
 
                     time.sleep(2)
